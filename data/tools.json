@@ -1,0 +1,102 @@
+{
+  "tools": [
+    {
+      "id": "thinkany",
+      "name": "ThinkAny",
+      "description": "AI Search Engine",
+      "icon": "https://thinkany.ai/favicon.ico",
+      "url": "https://thinkany.ai",
+      "tags": ["AI", "Search Engine"],
+      "featured": true
+    },
+    {
+      "id": "heybeauty",
+      "name": "HeyBeauty",
+      "description": "AI Virtual Try-On",
+      "icon": "https://heybeauty.ai/favicon.ico",
+      "url": "https://heybeauty.ai",
+      "tags": ["AI", "Virtual Try-On", "Image Tools"],
+      "featured": true
+    },
+    {
+      "id": "podlm",
+      "name": "PodLM",
+      "description": "AI Podcast Generator",
+      "icon": "https://podlm.com/favicon.ico",
+      "url": "https://podlm.com",
+      "tags": ["AI", "Podcast Generator"],
+      "featured": false
+    },
+    {
+      "id": "pagen",
+      "name": "Pagen",
+      "description": "AI Landing Page Generator",
+      "icon": "https://pagen.ai/favicon.ico",
+      "url": "https://pagen.ai",
+      "tags": ["AI", "Landing Page Generator"],
+      "featured": false
+    },
+    {
+      "id": "melodisco",
+      "name": "Melodisco",
+      "description": "AI Music Player",
+      "icon": "https://melodisco.app/favicon.ico",
+      "url": "https://melodisco.app",
+      "tags": ["AI", "Music Player"],
+      "featured": true
+    },
+    {
+      "id": "ai-wallpaper",
+      "name": "AI Wallpaper",
+      "description": "AI Wallpaper Generator",
+      "icon": "https://aiwallpaper.shop/favicon.ico",
+      "url": "https://aiwallpaper.shop",
+      "tags": ["AI", "Wallpaper Generator"],
+      "featured": false
+    },
+    {
+      "id": "ai-cover",
+      "name": "AI Cover",
+      "description": "AI Cover Generator",
+      "icon": "https://aicover.design/favicon.ico",
+      "url": "https://aicover.design",
+      "tags": ["AI", "Cover Generator"],
+      "featured": false
+    },
+    {
+      "id": "gpts-works",
+      "name": "GPTs Works",
+      "description": "GPTs directory",
+      "icon": "https://gpts.works/favicon.ico",
+      "url": "https://gpts.works",
+      "tags": ["AI", "GPTs", "Directory"],
+      "featured": true
+    },
+    {
+      "id": "mcp-servers",
+      "name": "MCP Servers",
+      "description": "MCP Servers directory",
+      "icon": "https://mcp-servers.com/favicon.ico",
+      "url": "https://mcp-servers.com",
+      "tags": ["AI", "MCP", "Directory"],
+      "featured": false
+    }
+  ],
+  "friendLinks": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/idoubi",
+      "icon": "🐙"
+    },
+    {
+      "name": "Twitter",
+      "url": "https://twitter.com/idoubi",
+      "icon": "🐦"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:me@idoubi.cc",
+      "icon": "📧"
+    }
+  ]
+}
