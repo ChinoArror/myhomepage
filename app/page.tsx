@@ -240,7 +240,11 @@ export default function HomePage() {
                           className="w-full h-full object-contain rounded"
                           onError={(e) => {
                             e.currentTarget.style.display = 'none';
-                            e.currentTarget.nextElementSibling.style.display = 'block';
+                            // 修复点: 添加了null检查
+                            const nextSibling = e.currentTarget.nextElementSibling as HTMLElement | null;
+                            if (nextSibling) {
+                              nextSibling.style.display = 'block';
+                            }
                           }}
                         />
                         <div className="w-8 h-8 bg-accent-primary-subtle rounded flex items-center justify-center text-accent-primary font-bold text-sm" style={{display: 'none'}}>
