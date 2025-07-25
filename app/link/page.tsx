@@ -111,19 +111,19 @@ export default function LinkPage() {
           <div className="flex gap-4">
             <Link href="/" className="text-body text-text-secondary hover:text-accent-primary transition-colors">
               <Plus className="w-4 h-4"/>
-              工具展示
+              Tools
             </Link>
             <Link href="/home" className="text-body text-text-secondary hover:text-accent-primary transition-colors">
               <HomeIcon className="w-4 h-4"/>
-              主页
+              Home
             </Link>
             <Link href="/opensource" className="text-body text-text-secondary hover:text-accent-primary transition-colors">
               <Code className="w-4 h-4"/>
-              开源项目
+              Open Source
             </Link>
             <Link href="/link" className="text-body text-accent-primary font-medium">
               <LinkIcon className="w-4 h-4"/>
-              友情链接
+              Links
             </Link>
           </div>
         </div>
@@ -329,7 +329,7 @@ export default function LinkPage() {
               </div>
             </div>
             <a
-              href="mailto:me@idoubi.cc?subject=友链申请&body=网站名称：%0A网站描述：%0A网站链接：%0A网站图标：%0A"
+              href="mailto:aryuki@aryuki.com?subject=友链申请&body=网站名称：%0A网站描述：%0A网站链接：%0A网站图标：%0A"
               className="inline-flex items-center gap-2 px-6 py-3 bg-accent-primary text-white rounded-large hover:bg-opacity-90 transition-all duration-300 hover:scale-105"
             >
               <Plus className="w-5 h-5" />

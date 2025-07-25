@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Github, ExternalLink, Star, GitFork, Eye, Calendar, Code } from 'lucide-react'
+import { Github, ExternalLink, Star, GitFork, Eye, Calendar, Code, HomeIcon, Plus, LinkIcon } from 'lucide-react'
 import Link from 'next/link'
 
 interface Repository {
@@ -28,7 +28,7 @@ export default function OpenSourcePage() {
   useEffect(() => {
     const fetchRepositories = async () => {
       try {
-        const response = await fetch('https://api.github.com/users/ChinoArror/repos?sort=updated&per_page=20')
+        const response = await fetch('https://api.github.com/users/ChinoArror/repos?sort=updated&per_page=30')
         if (!response.ok) {
           throw new Error('Failed to fetch repositories')
         }
@@ -100,20 +100,24 @@ export default function OpenSourcePage() {
       <nav className="p-6">
         <div className="max-w-container mx-auto flex justify-between items-center">
           <Link href="/" className="text-h3 font-bold text-text-primary hover:text-accent-primary transition-colors">
-            Idoubi's Tools
+            Aryuki's Tools
           </Link>
           <div className="flex gap-4">
             <Link href="/" className="text-body text-text-secondary hover:text-accent-primary transition-colors">
-              工具展示
+              <Plus className="w-5 h-5" />
+              Tools
             </Link>
             <Link href="/home" className="text-body text-text-secondary hover:text-accent-primary transition-colors">
-              主页
+              <HomeIcon className="w-5 h-5" />
+              Home
             </Link>
             <Link href="/opensource" className="text-body text-accent-primary font-medium">
-              开源项目
+              <LinkIcon className="w-5 h-5" />
+              Open Source
             </Link>
             <Link href="/link" className="text-body text-text-secondary hover:text-accent-primary transition-colors">
-              友情链接
+              <LinkIcon className="w-5 h-5" />
+              Links
             </Link>
           </div>
         </div>
@@ -131,7 +135,7 @@ export default function OpenSourcePage() {
           <div className="flex items-center justify-center gap-3 mb-6">
             <Github className="w-12 h-12 text-text-primary" />
             <h1 className="text-h1 font-bold text-text-primary">
-              开源项目
+              Open Source
             </h1>
           </div>
           <p className="text-h3 text-text-secondary mb-8 max-w-2xl mx-auto">

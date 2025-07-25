@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { ExternalLink, Github, Mail, Twitter, Search, Filter, Star, Home as HomeIcon, Code } from 'lucide-react'
+import { ExternalLink, Github, Mail, Twitter, Search, Filter, Star, Home as HomeIcon, Code, LinkIcon, Plus } from 'lucide-react'
 import Link from 'next/link'
 import toolsData from '../data/tools.json'
 
@@ -78,18 +78,20 @@ export default function HomePage() {
           </Link>
           <div className="flex gap-4">
             <Link href="/" className="text-body text-accent-primary font-medium">
-              工具展示
+              <Plus className="w-4 h-4" />
+              Tools
             </Link>
-            <Link href="/home" className="text-body text-text-secondary hover:text-accent-primary transition-colors flex items-center gap-1">
+            <Link href="/home" className="text-body text-text-secondary hover:text-accent-primary transition-colors">
               <HomeIcon className="w-4 h-4" />
-              主页
+              Home
             </Link>
             <Link href="/opensource" className="text-body text-text-secondary hover:text-accent-primary transition-colors flex items-center gap-1">
               <Code className="w-4 h-4" />
-              开源项目
+              Open Source
             </Link>
-            <Link href="/link" className="text-body text-text-secondary hover:text-accent-primary transition-colors">
-              友情链接
+            <Link href="/link" className="text-body text-text-secondary hover:text-accent-primary transition-colors flex items-center gap-1">
+              <LinkIcon className="w-4 h-4" />
+              Links
             </Link>
           </div>
         </div>
