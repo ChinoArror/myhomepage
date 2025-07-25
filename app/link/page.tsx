@@ -110,20 +110,20 @@ export default function LinkPage() {
           </Link>
           <div className="flex gap-4">
             <Link href="/" className="text-body text-text-secondary hover:text-accent-primary transition-colors">
-              <Plus className="w-4 h-4"/>
-              工具展示
+              <Plus className="w-5 h-5"/>
+              Tools
             </Link>
             <Link href="/home" className="text-body text-text-secondary hover:text-accent-primary transition-colors">
-              <HomeIcon className="w-4 h-4"/>
-              主页
+              <HomeIcon className="w-5 h-5"/>
+              Home
             </Link>
             <Link href="/opensource" className="text-body text-text-secondary hover:text-accent-primary transition-colors">
-              <Code className="w-4 h-4"/>
-              开源项目
+              <Code className="w-5 h-5"/>
+              Open Source
             </Link>
             <Link href="/link" className="text-body text-accent-primary font-medium">
-              <LinkIcon className="w-4 h-4"/>
-              友情链接
+              <LinkIcon className="w-5 h-5"/>
+              Links
             </Link>
           </div>
         </div>
