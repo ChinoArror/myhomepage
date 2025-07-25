@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { ExternalLink, Link as LinkIcon, Plus, Heart } from 'lucide-react'
+import { ExternalLink, Link as LinkIcon, Plus, Heart, HomeIcon, Code } from 'lucide-react'
 import Link from 'next/link'
 
 interface FriendLink {
@@ -106,19 +106,23 @@ export default function LinkPage() {
       <nav className="p-6">
         <div className="max-w-container mx-auto flex justify-between items-center">
           <Link href="/" className="text-h3 font-bold text-text-primary hover:text-accent-primary transition-colors">
-            Idoubi's Tools
+            Aryuki's Tools
           </Link>
           <div className="flex gap-4">
             <Link href="/" className="text-body text-text-secondary hover:text-accent-primary transition-colors">
+              <Plus className="w-4 h-4"/>
               工具展示
             </Link>
             <Link href="/home" className="text-body text-text-secondary hover:text-accent-primary transition-colors">
+              <HomeIcon className="w-4 h-4"/>
               主页
             </Link>
             <Link href="/opensource" className="text-body text-text-secondary hover:text-accent-primary transition-colors">
+              <Code className="w-4 h-4"/>
               开源项目
             </Link>
             <Link href="/link" className="text-body text-accent-primary font-medium">
+              <LinkIcon className="w-4 h-4"/>
               友情链接
             </Link>
           </div>

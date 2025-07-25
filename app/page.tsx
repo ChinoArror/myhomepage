@@ -74,7 +74,7 @@ export default function HomePage() {
       <nav className="p-6">
         <div className="max-w-container mx-auto flex justify-between items-center">
           <Link href="/" className="text-h3 font-bold text-text-primary hover:text-accent-primary transition-colors">
-            Idoubi's Tools
+            Aryuki's Tools
           </Link>
           <div className="flex gap-4">
             <Link href="/" className="text-body text-accent-primary font-medium">
@@ -103,14 +103,14 @@ export default function HomePage() {
         <div className="max-w-container mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1,   y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <h1 className="text-h1 font-bold text-text-primary mb-6">
-              Idoubi's <span className="text-accent-primary">AI Tools</span>
+              Aryuki's <span className="text-accent-primary">Tools</span>
             </h1>
             <p className="text-h3 text-text-secondary mb-8 max-w-2xl mx-auto">
-              探索我开发的各种AI工具和应用，让技术为生活带来更多可能
+              探索我部署的各种 工具，让技术为生活带来更多可能
             </p>
             <motion.div
               className="flex justify-center space-x-4"
@@ -321,10 +321,10 @@ export default function HomePage() {
             viewport={{ once: true }}
           >
             <p className="text-body text-text-secondary mb-4">
-              Made with ❤️ by Idoubi
+              Made by Aryuki
             </p>
             <p className="text-small text-text-tertiary">
-              © 2024 Idoubi. All rights reserved.
+              © 2025 Aryuki. All rights reserved.
             </p>
           </motion.div>
         </div>

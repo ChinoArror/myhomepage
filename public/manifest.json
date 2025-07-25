@@ -1,8 +1,8 @@
 {
-  "name": "Idoubi's Tools - AI工具集合",
-  "short_name": "Idoubi Tools",
-  "description": "A collection of AI-powered tools and applications by Idoubi",
-  "start_url": "/",
+  "name": "Aryuki's Tools - 工具集合",
+  "short_name": "Aryuki Tools",
+  "description": "A collection of tools and applications by Aryuki",
+  "start_url": "https://tool.aryuki.com",
   "display": "standalone",
   "background_color": "#F9FAFB",
   "theme_color": "#34D399",

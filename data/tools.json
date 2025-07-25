@@ -1,21 +1,21 @@
 {
   "tools": [
     {
-      "id": "thinkany",
-      "name": "ThinkAny",
-      "description": "AI Search Engine",
-      "icon": "https://thinkany.ai/favicon.ico",
-      "url": "https://thinkany.ai",
-      "tags": ["AI", "Search Engine"],
+      "id": "cloudpaste",
+      "name": "Cloud Paste",
+      "description": "a online paste of texts or files",
+      "icon": "🔗", 
+      "url": "https://paste.aryuki.com",
+      "tags": ["Paste", "Online Sync"],
       "featured": true
     },
     {
-      "id": "heybeauty",
-      "name": "HeyBeauty",
-      "description": "AI Virtual Try-On",
-      "icon": "https://heybeauty.ai/favicon.ico",
-      "url": "https://heybeauty.ai",
-      "tags": ["AI", "Virtual Try-On", "Image Tools"],
+      "id": "mail-232799.xyz",
+      "name": "Mail-232799.xyz",
+      "description": "A temporary email service",
+      "icon": "https://raw.githubusercontent.com/aryuki99/moemail_formal/master/public/icons/icon-512x512.png",
+      "url": "https://mail.232799.xyz",
+      "tags": ["email", "temporary", "free"],
       "featured": true
     },
     {

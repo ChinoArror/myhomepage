@@ -5,26 +5,26 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "Idoubi's Tools - AI工具集合",
-  description: 'A collection of AI-powered tools and applications by Idoubi',
-  keywords: ['AI tools', 'artificial intelligence', 'web applications', 'idoubi'],
-  authors: [{ name: 'Idoubi', url: 'https://idoubi.cc' }],
-  creator: 'Idoubi',
-  publisher: 'Idoubi',
+  title: "Aryuki's Tools - 工具集合",
+  description: 'A collection of AI-powered tools and applications by Aryuki',
+  keywords: ['AI tools', 'artificial intelligence', 'web applications', 'aryuki'],
+  authors: [{ name: 'Aryuki', url: 'https://home.aryuki.com' }],
+  creator: 'Aryuki',
+  publisher: 'Aryuki',
   robots: 'index, follow',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://tools.idoubi.cc',
-    title: "Idoubi's Tools - AI工具集合",
-    description: 'A collection of AI-powered tools and applications by Idoubi',
-    siteName: "Idoubi's Tools",
+    url: 'https://home.aryuki.com',
+    title: "Aryuki's Tools - 工具集合",
+    description: 'A collection of AI-powered tools and applications by Aryuki',
+    siteName: "Aryuki's Tools",
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Idoubi's Tools - AI工具集合",
-    description: 'A collection of AI-powered tools and applications by Idoubi',
-    creator: '@idoubi',
+    title: "Aryuki's Tools - 工具集合",
+    description: 'A collection of AI-powered tools and applications by Aryuki',
+    creator: '@yysy_rhy',
   },
   viewport: {
     width: 'device-width',
@@ -46,6 +46,14 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6ZCGYZP5S7"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-6ZCGYZP5S7');
+        </script>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
