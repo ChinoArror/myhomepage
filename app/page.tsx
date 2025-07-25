@@ -252,13 +252,9 @@ export default function HomePage() {
                           className="w-full h-full object-contain rounded"
                           onError={(e) => {
                             e.currentTarget.style.display = 'none';
-                            const nextElement = // 修复点: 添加了null检查
-                            const nextSibling = e.currentTarget.nextElementSibling as HTMLElement;
-                            if (nextElement) {
-                              nextElement as HTMLElement | null;
+                            const nextSibling = e.currentTarget.nextElementSibling as HTMLElement | null;
                             if (nextSibling) {
                               nextSibling.style.display = 'block';
-                            }
                             }
                           }}
                         />
