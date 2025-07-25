@@ -242,7 +242,10 @@ export default function LinkPage() {
                         className="w-full h-full object-contain rounded"
                         onError={(e) => {
                           e.currentTarget.style.display = 'none';
-                          e.currentTarget.nextElementSibling.style.display = 'block';
+                          const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+                          if (nextElement) {
+                            nextElement.style.display = 'block';
+                          }
                         }}
                       />
                       <div className="w-8 h-8 bg-accent-primary-subtle rounded flex items-center justify-center text-accent-primary font-bold text-sm" style={{display: 'none'}}>

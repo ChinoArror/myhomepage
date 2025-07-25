@@ -137,25 +137,37 @@ export default function HomePage() {
         
         {/* Floating elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {[...Array(6)].map((_, i) => (
-            <motion.div
-              key={i}
-              className="absolute w-4 h-4 bg-accent-primary-subtle rounded-full opacity-20"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-              }}
-              animate={{
-                y: [-20, 20, -20],
-                x: [-10, 10, -10],
-              }}
-              transition={{
-                duration: 4 + Math.random() * 2,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-            />
-          ))}
+          {[...Array(6)].map((_, i) => {
+            const positions = [
+              { left: '10%', top: '20%' },
+              { left: '80%', top: '15%' },
+              { left: '15%', top: '70%' },
+              { left: '75%', top: '80%' },
+              { left: '50%', top: '30%' },
+              { left: '30%', top: '60%' }
+            ];
+            const durations = [4, 5, 4.5, 5.5, 4.2, 4.8];
+            
+            return (
+              <motion.div
+                key={i}
+                className="absolute w-4 h-4 bg-accent-primary-subtle rounded-full opacity-20"
+                style={{
+                  left: positions[i].left,
+                  top: positions[i].top,
+                }}
+                animate={{
+                  y: [-20, 20, -20],
+                  x: [-10, 10, -10],
+                }}
+                transition={{
+                  duration: durations[i],
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
+              />
+            );
+          })}
         </div>
       </motion.section>
 
@@ -240,7 +252,10 @@ export default function HomePage() {
                           className="w-full h-full object-contain rounded"
                           onError={(e) => {
                             e.currentTarget.style.display = 'none';
-                            e.currentTarget.nextElementSibling.style.display = 'block';
+                            const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+                            if (nextElement) {
+                              nextElement.style.display = 'block';
+                            }
                           }}
                         />
                         <div className="w-8 h-8 bg-accent-primary-subtle rounded flex items-center justify-center text-accent-primary font-bold text-sm" style={{display: 'none'}}>
