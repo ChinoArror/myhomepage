@@ -112,7 +112,7 @@ export default function OpenSourcePage() {
               Home
             </Link>
             <Link href="/opensource" className="text-body text-accent-primary font-medium">
-              <LinkIcon className="w-5 h-5" />
+              <Code className="w-5 h-5" />
               Open Source
             </Link>
             <Link href="/link" className="text-body text-text-secondary hover:text-accent-primary transition-colors">

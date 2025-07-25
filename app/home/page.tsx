@@ -339,8 +339,8 @@ export default function HomePage() {
             {/* GitHub Contribution Graph */}
             <div className="bg-background-primary rounded-large p-6 border border-border-primary">
               <GitHubChart 
-                username="ChinoArror" 
-                accessToken="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" 
+                username={process.env.NEXT_PUBLIC_GITHUB_CHART_USERNAME || ""} 
+                accessToken={process.env.GITHUB_CHART_TOKEN || ""} 
               />
             </div>
             

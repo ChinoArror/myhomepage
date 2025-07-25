@@ -129,15 +129,26 @@ npm run start
 
 ### GitHub配置
 
-在 `app/home/page.tsx` 中配置GitHub相关信息：
+GitHub贡献图表现在通过环境变量配置，提高了安全性：
 
-```typescript
-// 修改GitHub用户名
-const username = "your-github-username"
+1. **复制环境变量模板**：
+   ```bash
+   cp .env.example .env.local
+   ```
 
-// 配置GitHub访问令牌（可选，用于提高API限制）
-const accessToken = process.env.GITHUB_TOKEN
-```
+2. **配置环境变量**：
+   ```bash
+   # GitHub用户名（公开可见，用于客户端）
+   NEXT_PUBLIC_GITHUB_CHART_USERNAME=your_github_username
+   
+   # GitHub访问令牌（服务端使用，不会暴露给客户端）
+   GITHUB_CHART_TOKEN=your_github_personal_access_token
+   ```
+
+3. **获取GitHub个人访问令牌**：
+   - 访问 [GitHub Settings > Developer settings > Personal access tokens](https://github.com/settings/tokens)
+   - 生成新的token，选择 `public_repo` 权限
+   - 将token填入 `GITHUB_CHART_TOKEN` 环境变量
 
 ### 个人信息配置
 
@@ -190,15 +201,22 @@ npm run build
 创建 `.env.local` 文件或在部署平台配置：
 
 ```bash
-# GitHub API访问令牌（可选，用于提高API限制）
-GITHUB_TOKEN=your_github_token
+# GitHub图表配置（必需）
+NEXT_PUBLIC_GITHUB_CHART_USERNAME=your_github_username
+GITHUB_CHART_TOKEN=your_github_personal_access_token
 
-# 网站基础URL
+# 网站基础URL（可选）
 NEXT_PUBLIC_SITE_URL=https://your-domain.com
 
-# GitHub用户名（如果需要动态配置）
+# 其他GitHub配置（可选）
+GITHUB_TOKEN=your_github_token
 NEXT_PUBLIC_GITHUB_USERNAME=your-username
 ```
+
+**重要说明**：
+- `NEXT_PUBLIC_GITHUB_CHART_USERNAME`：以 `NEXT_PUBLIC_` 开头的变量会暴露给客户端
+- `GITHUB_CHART_TOKEN`：不以 `NEXT_PUBLIC_` 开头，仅在服务端使用，更安全
+- 在Vercel等部署平台中，请在环境变量设置中配置这些值
 
 > **注意**: GitHub API有访问限制，配置`GITHUB_TOKEN`可以提高限制。在GitHub Settings > Developer settings > Personal access tokens中创建。
 

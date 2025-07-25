@@ -78,19 +78,19 @@ export default function HomePage() {
           </Link>
           <div className="flex gap-4">
             <Link href="/" className="text-body text-accent-primary font-medium">
-              <Plus className="w-4 h-4" />
+              <Plus className="w-5 h-5" />
               Tools
             </Link>
             <Link href="/home" className="text-body text-text-secondary hover:text-accent-primary transition-colors">
-              <HomeIcon className="w-4 h-4" />
+              <HomeIcon className="w-5 h-5" />
               Home
             </Link>
-            <Link href="/opensource" className="text-body text-text-secondary hover:text-accent-primary transition-colors flex items-center gap-1">
-              <Code className="w-4 h-4" />
+            <Link href="/opensource" className="text-body text-text-secondary hover:text-accent-primary transition-colors">
+              <Code className="w-5 h-5" />
               Open Source
             </Link>
-            <Link href="/link" className="text-body text-text-secondary hover:text-accent-primary transition-colors flex items-center gap-1">
-              <LinkIcon className="w-4 h-4" />
+            <Link href="/link" className="text-body text-text-secondary hover:text-accent-primary transition-colors">
+              <LinkIcon className="w-5 h-5" />
               Links
             </Link>
           </div>
