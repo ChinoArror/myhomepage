@@ -329,7 +329,7 @@ export default function LinkPage() {
               </div>
             </div>
             <a
-              href="mailto:me@idoubi.cc?subject=友链申请&body=网站名称：%0A网站描述：%0A网站链接：%0A网站图标：%0A"
+              href="mailto:yysy.rhy@gmail.com?subject=友链申请&body=网站名称：%0A网站描述：%0A网站链接：%0A网站图标：%0A"
               className="inline-flex items-center gap-2 px-6 py-3 bg-accent-primary text-white rounded-large hover:bg-opacity-90 transition-all duration-300 hover:scale-105"
             >
               <Plus className="w-5 h-5" />
